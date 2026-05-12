@@ -1,0 +1,2361 @@
+Command: vcs -l vcs.log -timescale=1ns/1ps -sverilog -ntb_opts uvm -debug_access+all \
+-full64 -kdb -lca -P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+../rtl/APB_interface.sv ../rtl/APB_slave_interface.v ../rtl/Baud_rate_generator.v \
+../rtl/shifter.v ../rtl/slave_control_select.v ../rtl/SPI core.v ../rtl/SPI_interface.sv \
++incdir+../tb +incdir+../test +incdir+../apb_agent +incdir+../spi_agent ../test/test_pkg.sv \
+../tb/top.sv
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP1_Full64 -- Wed Mar 25 17:29:37 2026
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/snps_macros.svp'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '../rtl/APB_interface.sv'
+Parsing design file '../rtl/APB_slave_interface.v'
+Parsing design file '../rtl/Baud_rate_generator.v'
+Parsing design file '../rtl/shifter.v'
+Parsing design file '../rtl/slave_control_select.v'
+Parsing design file '../rtl/SPI core.v'
+Parsing design file '../rtl/SPI_interface.sv'
+Parsing design file '../test/test_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_txn.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_agent_config.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_driver.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_monitor.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_sequencer.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/APB_agent.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/APB_agent_top.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_txn.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_agent_config.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_driver.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_monitor.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_sequencer.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/SPI_agent.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/SPI_agent_top.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../tb/scoreboard.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../tb/env_config.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../tb/env.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../apb_agent/apb_sequence.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../spi_agent/spi_sequence.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing included file '../test/test.sv'.
+Back to file '../test/test_pkg.sv'.
+Parsing design file '../tb/top.sv'
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+11 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module uvm_custom_install_verdi_recording
+recompiling module APB_interface
+recompiling module SPI_core
+recompiling module SPI_interface
+recompiling package test_pkg
+recompiling module top
+All of 11 modules done
+make[1]: Entering directory '/home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib -L/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o \
+_1046642_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-lvcsnew -lsimprofile -luclinative /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_save_restore_new.o \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/csrc' \
+
+CPU time: 14.554 seconds to compile + .348 seconds to elab + .966 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Command: /home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/./simv -a vcs.log +fsdbfile+wave1.fsdb -cm_dir ./mem_cov1 +ntb_random_seed_automatic +UVM_TESTNAME=test_cpol_cpha_00
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Mar 25 17:29 2026
+NOTE: automatic random seed used: 1265170586
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_cpol_cpha_00...
+UVM_INFO ../spi_agent/spi_driver.sv(30) @ 0: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] Getting config successful
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------
+Name                         Type                        Size  Value
+--------------------------------------------------------------------
+uvm_test_top                 test_cpol_cpha_00           -     @469 
+  envh                       env                         -     @484 
+    apb_agent_top_h          APB_agent_top               -     @496 
+      apb_agent_h[0]         apb_agent                   -     @638 
+        apb_drvh             apb_driver                  -     @650 
+          rsp_port           uvm_analysis_port           -     @667 
+          seq_item_port      uvm_seq_item_pull_port      -     @658 
+        apb_monh             apb_monitor                 -     @676 
+          apb_mon_port       uvm_analysis_port           -     @684 
+        apb_seqrh            apb_sequencer               -     @693 
+          rsp_export         uvm_analysis_export         -     @701 
+          seq_item_export    uvm_seq_item_pull_imp       -     @807 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+    sb[0]                    scoreboard                  -     @523 
+      fifo_apb               uvm_tlm_analysis_fifo #(T)  -     @531 
+        analysis_export      uvm_analysis_imp            -     @575 
+        get_ap               uvm_analysis_port           -     @566 
+        get_peek_export      uvm_get_peek_imp            -     @548 
+        put_ap               uvm_analysis_port           -     @557 
+        put_export           uvm_put_imp                 -     @539 
+      fifo_spi               uvm_tlm_analysis_fifo #(T)  -     @584 
+        analysis_export      uvm_analysis_imp            -     @628 
+        get_ap               uvm_analysis_port           -     @619 
+        get_peek_export      uvm_get_peek_imp            -     @601 
+        put_ap               uvm_analysis_port           -     @610 
+        put_export           uvm_put_imp                 -     @592 
+    spi_agent_top_h          SPI_agent_top               -     @504 
+      spi_agent_h[0]         SPI_agent                   -     @824 
+        spi_drvh             spi_driver                  -     @972 
+          rsp_port           uvm_analysis_port           -     @989 
+          seq_item_port      uvm_seq_item_pull_port      -     @980 
+        spi_monh             spi_monitor                 -     @832 
+          spi_mon_port       uvm_analysis_port           -     @840 
+        spi_seqrh            spi_sequencer               -     @849 
+          rsp_export         uvm_analysis_export         -     @857 
+          seq_item_export    uvm_seq_item_pull_imp       -     @963 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+--------------------------------------------------------------------
+
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h0                                                            
+  PADDR                        integral  3     'h2                                                            
+  PWDATA                       integral  8     'h17                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    30000                                                          
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1005
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h2  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 110000ps failed at 150000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h0                                                            
+  PWDATA                       integral  8     'hf2                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    110000                                                         
+  end_time                     time      64    110000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1082
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h0  
+  PWDATA   integral  8     'hf2 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 170000ps failed at 210000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h18                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    170000                                                         
+  end_time                     time      64    170000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1086
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h18 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 230000ps failed at 270000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h2                                                            
+  PWDATA                       integral  8     'h1                                                            
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    230000                                                         
+  end_time                     time      64    230000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1090
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h2  
+  PWDATA   integral  8     'h1  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 290000ps failed at 330000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h5                                                            
+  PWDATA                       integral  8     'h4c                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    290000                                                         
+  end_time                     time      64    290000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h4c 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 350000ps failed at 390000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../spi_agent/spi_driver.sv(54) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Miso_value is 00000011
+UVM_INFO ../spi_agent/spi_driver.sv(96) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 450000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h0  
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 490000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 530000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h40 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 570000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 610000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h40 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 650000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 690000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h40 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 730000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 770000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h48 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 810000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 850000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h4c 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 890000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 930000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h4c 
+  miso                   integral  8     'h2  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(100) @ 970000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 1010000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h4c 
+  miso                   integral  8     'h3  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h4c 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+"----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'h0  
+  mosi                   integral  8     'h4c 
+  miso                   integral  8     'h3  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(95) @ 1010000: uvm_test_top.envh.sb[0] [scoreboard] Transmission Succesfull
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is -------------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                               
+-------------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1112                                                               
+  PRESETn                      integral  1     'h1                                                                 
+  PSEL                         integral  1     'h0                                                                 
+  PENABLE                      integral  1     'h0                                                                 
+  PWRITE                       integral  1     'h0                                                                 
+  PADDR                        integral  3     'h5                                                                 
+  PWDATA                       integral  8     'h3                                                                 
+  PRDATA                       integral  8     'h3                                                                 
+  PREADY                       integral  1     'h0                                                                 
+  PSLVERR                      integral  1     'h0                                                                 
+  begin_time                   time      64    1050000                                                             
+  depth                        int       32    'd2                                                                 
+  parent sequence (name)       string    9     read_seqh                                                           
+  parent sequence (full name)  string    68    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.read_seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh          
+-------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h3  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h3  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(106) @ 1110000: uvm_test_top.envh.sb[0] [scoreboard] Reception Succesfull
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 1110000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   35
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[apb_driver]     6
+[apb_monitor]     6
+[scoreboard]     2
+[spi_driver]    10
+[spi_monitor]     8
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time              1110000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1110000 ps
+CPU Time:      0.440 seconds;       Data structure size:   0.6Mb
+Wed Mar 25 17:29:55 2026
+Command: /home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/./simv -a vcs.log +fsdbfile+wave2.fsdb -cm_dir ./mem_cov2 +ntb_random_seed_automatic +UVM_TESTNAME=test_cpol_cpha_01
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Mar 25 17:29 2026
+NOTE: automatic random seed used: 4217853901
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_cpol_cpha_01...
+UVM_INFO ../spi_agent/spi_driver.sv(30) @ 0: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] Getting config successful
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------
+Name                         Type                        Size  Value
+--------------------------------------------------------------------
+uvm_test_top                 test_cpol_cpha_01           -     @469 
+  envh                       env                         -     @484 
+    apb_agent_top_h          APB_agent_top               -     @496 
+      apb_agent_h[0]         apb_agent                   -     @638 
+        apb_drvh             apb_driver                  -     @650 
+          rsp_port           uvm_analysis_port           -     @667 
+          seq_item_port      uvm_seq_item_pull_port      -     @658 
+        apb_monh             apb_monitor                 -     @676 
+          apb_mon_port       uvm_analysis_port           -     @684 
+        apb_seqrh            apb_sequencer               -     @693 
+          rsp_export         uvm_analysis_export         -     @701 
+          seq_item_export    uvm_seq_item_pull_imp       -     @807 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+    sb[0]                    scoreboard                  -     @523 
+      fifo_apb               uvm_tlm_analysis_fifo #(T)  -     @531 
+        analysis_export      uvm_analysis_imp            -     @575 
+        get_ap               uvm_analysis_port           -     @566 
+        get_peek_export      uvm_get_peek_imp            -     @548 
+        put_ap               uvm_analysis_port           -     @557 
+        put_export           uvm_put_imp                 -     @539 
+      fifo_spi               uvm_tlm_analysis_fifo #(T)  -     @584 
+        analysis_export      uvm_analysis_imp            -     @628 
+        get_ap               uvm_analysis_port           -     @619 
+        get_peek_export      uvm_get_peek_imp            -     @601 
+        put_ap               uvm_analysis_port           -     @610 
+        put_export           uvm_put_imp                 -     @592 
+    spi_agent_top_h          SPI_agent_top               -     @504 
+      spi_agent_h[0]         SPI_agent                   -     @824 
+        spi_drvh             spi_driver                  -     @972 
+          rsp_port           uvm_analysis_port           -     @989 
+          seq_item_port      uvm_seq_item_pull_port      -     @980 
+        spi_monh             spi_monitor                 -     @832 
+          spi_mon_port       uvm_analysis_port           -     @840 
+        spi_seqrh            spi_sequencer               -     @849 
+          rsp_export         uvm_analysis_export         -     @857 
+          seq_item_export    uvm_seq_item_pull_imp       -     @963 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+--------------------------------------------------------------------
+
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h0                                                            
+  PADDR                        integral  3     'h0                                                            
+  PWDATA                       integral  8     'he1                                                           
+  PRDATA                       integral  8     'h4                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    30000                                                          
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1005
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h0  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h4  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 110000ps failed at 150000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h0                                                            
+  PWDATA                       integral  8     'hf6                                                           
+  PRDATA                       integral  8     'h4                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    110000                                                         
+  end_time                     time      64    110000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1082
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h0  
+  PWDATA   integral  8     'hf6 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 170000ps failed at 210000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h18                                                           
+  PRDATA                       integral  8     'h4                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    170000                                                         
+  end_time                     time      64    170000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1086
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h18 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 230000ps failed at 270000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h2                                                            
+  PWDATA                       integral  8     'h1                                                            
+  PRDATA                       integral  8     'h4                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    230000                                                         
+  end_time                     time      64    230000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1090
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h2  
+  PWDATA   integral  8     'h1  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 290000ps failed at 330000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h5                                                            
+  PWDATA                       integral  8     'hf5                                                           
+  PRDATA                       integral  8     'h4                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    290000                                                         
+  end_time                     time      64    290000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'hf5 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 350000ps failed at 390000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../spi_agent/spi_driver.sv(54) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Miso_value is 10110101
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 450000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 490000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h80 
+  miso                   integral  8     'h80 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 530000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 570000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hc0 
+  miso                   integral  8     'h80 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 610000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 650000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'he0 
+  miso                   integral  8     'ha0 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 690000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 730000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hf0 
+  miso                   integral  8     'hb0 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 770000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 810000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hf0 
+  miso                   integral  8     'hb0 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 850000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 890000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hf4 
+  miso                   integral  8     'hb4 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 930000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 970000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hf4 
+  miso                   integral  8     'hb4 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(107) @ 1010000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 1050000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hf5 
+  miso                   integral  8     'hb5 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'hf5 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+"----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'h0  
+  mosi                   integral  8     'hf5 
+  miso                   integral  8     'hb5 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(95) @ 1050000: uvm_test_top.envh.sb[0] [scoreboard] Transmission Succesfull
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is -------------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                               
+-------------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1112                                                               
+  PRESETn                      integral  1     'h1                                                                 
+  PSEL                         integral  1     'h0                                                                 
+  PENABLE                      integral  1     'h0                                                                 
+  PWRITE                       integral  1     'h0                                                                 
+  PADDR                        integral  3     'h5                                                                 
+  PWDATA                       integral  8     'h58                                                                
+  PRDATA                       integral  8     'hb5                                                                
+  PREADY                       integral  1     'h0                                                                 
+  PSLVERR                      integral  1     'h0                                                                 
+  begin_time                   time      64    1050000                                                             
+  depth                        int       32    'd2                                                                 
+  parent sequence (name)       string    9     read_seqh                                                           
+  parent sequence (full name)  string    68    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.read_seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh          
+-------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'hb5 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'hb5 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(106) @ 1110000: uvm_test_top.envh.sb[0] [scoreboard] Reception Succesfull
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 1110000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   35
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[apb_driver]     6
+[apb_monitor]     6
+[scoreboard]     2
+[spi_driver]    10
+[spi_monitor]     8
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time              1110000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1110000 ps
+CPU Time:      0.430 seconds;       Data structure size:   0.6Mb
+Wed Mar 25 17:29:56 2026
+Command: /home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/./simv -a vcs.log +fsdbfile+wave3.fsdb -cm_dir ./mem_cov3 +ntb_random_seed_automatic +UVM_TESTNAME=test_cpol_cpha_10
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Mar 25 17:29 2026
+NOTE: automatic random seed used: 1452511869
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_cpol_cpha_10...
+UVM_INFO ../spi_agent/spi_driver.sv(30) @ 0: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] Getting config successful
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------
+Name                         Type                        Size  Value
+--------------------------------------------------------------------
+uvm_test_top                 test_cpol_cpha_10           -     @469 
+  envh                       env                         -     @484 
+    apb_agent_top_h          APB_agent_top               -     @496 
+      apb_agent_h[0]         apb_agent                   -     @638 
+        apb_drvh             apb_driver                  -     @650 
+          rsp_port           uvm_analysis_port           -     @667 
+          seq_item_port      uvm_seq_item_pull_port      -     @658 
+        apb_monh             apb_monitor                 -     @676 
+          apb_mon_port       uvm_analysis_port           -     @684 
+        apb_seqrh            apb_sequencer               -     @693 
+          rsp_export         uvm_analysis_export         -     @701 
+          seq_item_export    uvm_seq_item_pull_imp       -     @807 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+    sb[0]                    scoreboard                  -     @523 
+      fifo_apb               uvm_tlm_analysis_fifo #(T)  -     @531 
+        analysis_export      uvm_analysis_imp            -     @575 
+        get_ap               uvm_analysis_port           -     @566 
+        get_peek_export      uvm_get_peek_imp            -     @548 
+        put_ap               uvm_analysis_port           -     @557 
+        put_export           uvm_put_imp                 -     @539 
+      fifo_spi               uvm_tlm_analysis_fifo #(T)  -     @584 
+        analysis_export      uvm_analysis_imp            -     @628 
+        get_ap               uvm_analysis_port           -     @619 
+        get_peek_export      uvm_get_peek_imp            -     @601 
+        put_ap               uvm_analysis_port           -     @610 
+        put_export           uvm_put_imp                 -     @592 
+    spi_agent_top_h          SPI_agent_top               -     @504 
+      spi_agent_h[0]         SPI_agent                   -     @824 
+        spi_drvh             spi_driver                  -     @972 
+          rsp_port           uvm_analysis_port           -     @989 
+          seq_item_port      uvm_seq_item_pull_port      -     @980 
+        spi_monh             spi_monitor                 -     @832 
+          spi_mon_port       uvm_analysis_port           -     @840 
+        spi_seqrh            spi_sequencer               -     @849 
+          rsp_export         uvm_analysis_export         -     @857 
+          seq_item_export    uvm_seq_item_pull_imp       -     @963 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+--------------------------------------------------------------------
+
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h0                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h0                                                            
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    30000                                                          
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1005
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 110000ps failed at 150000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h0                                                            
+  PWDATA                       integral  8     'hfa                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    110000                                                         
+  end_time                     time      64    110000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1082
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h0  
+  PWDATA   integral  8     'hfa 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 170000ps failed at 210000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h18                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    170000                                                         
+  end_time                     time      64    170000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1086
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h18 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 230000ps failed at 270000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h2                                                            
+  PWDATA                       integral  8     'h1                                                            
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    230000                                                         
+  end_time                     time      64    230000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1090
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h2  
+  PWDATA   integral  8     'h1  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 290000ps failed at 330000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h5                                                            
+  PWDATA                       integral  8     'hb9                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    290000                                                         
+  end_time                     time      64    290000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'hb9 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 350000ps failed at 390000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../spi_agent/spi_driver.sv(54) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Miso_value is 01100001
+UVM_INFO ../spi_agent/spi_driver.sv(113) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 450000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h80 
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 490000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 530000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h80 
+  miso                   integral  8     'h40 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 570000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 610000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'ha0 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 650000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 690000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hb0 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 730000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 770000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hb8 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 810000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 850000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hb8 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 890000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 930000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hb8 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(117) @ 970000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(89) @ 1010000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'hb9 
+  miso                   integral  8     'h61 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'hb9 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+"----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'h0  
+  mosi                   integral  8     'hb9 
+  miso                   integral  8     'h61 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(95) @ 1010000: uvm_test_top.envh.sb[0] [scoreboard] Transmission Succesfull
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is -------------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                               
+-------------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1112                                                               
+  PRESETn                      integral  1     'h1                                                                 
+  PSEL                         integral  1     'h0                                                                 
+  PENABLE                      integral  1     'h0                                                                 
+  PWRITE                       integral  1     'h0                                                                 
+  PADDR                        integral  3     'h5                                                                 
+  PWDATA                       integral  8     'h46                                                                
+  PRDATA                       integral  8     'h61                                                                
+  PREADY                       integral  1     'h0                                                                 
+  PSLVERR                      integral  1     'h0                                                                 
+  begin_time                   time      64    1050000                                                             
+  depth                        int       32    'd2                                                                 
+  parent sequence (name)       string    9     read_seqh                                                           
+  parent sequence (full name)  string    68    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.read_seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh          
+-------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h61 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h61 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(106) @ 1110000: uvm_test_top.envh.sb[0] [scoreboard] Reception Succesfull
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 1110000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   35
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[apb_driver]     6
+[apb_monitor]     6
+[scoreboard]     2
+[spi_driver]    10
+[spi_monitor]     8
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time              1110000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1110000 ps
+CPU Time:      0.430 seconds;       Data structure size:   0.6Mb
+Wed Mar 25 17:29:57 2026
+Command: /home1/B123/KDHaneesh/VLSI_RN_OFFLINE/UVM_LABS/Mini_Project/sim/./simv -a vcs.log +fsdbfile+wave4.fsdb -cm_dir ./mem_cov4 +ntb_random_seed_automatic +UVM_TESTNAME=test_cpol_cpha_11
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Mar 25 17:29 2026
+NOTE: automatic random seed used: 622086386
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test_cpol_cpha_11...
+UVM_INFO ../spi_agent/spi_driver.sv(30) @ 0: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] Getting config successful
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------------
+Name                         Type                        Size  Value
+--------------------------------------------------------------------
+uvm_test_top                 test_cpol_cpha_11           -     @469 
+  envh                       env                         -     @484 
+    apb_agent_top_h          APB_agent_top               -     @496 
+      apb_agent_h[0]         apb_agent                   -     @638 
+        apb_drvh             apb_driver                  -     @650 
+          rsp_port           uvm_analysis_port           -     @667 
+          seq_item_port      uvm_seq_item_pull_port      -     @658 
+        apb_monh             apb_monitor                 -     @676 
+          apb_mon_port       uvm_analysis_port           -     @684 
+        apb_seqrh            apb_sequencer               -     @693 
+          rsp_export         uvm_analysis_export         -     @701 
+          seq_item_export    uvm_seq_item_pull_imp       -     @807 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+    sb[0]                    scoreboard                  -     @523 
+      fifo_apb               uvm_tlm_analysis_fifo #(T)  -     @531 
+        analysis_export      uvm_analysis_imp            -     @575 
+        get_ap               uvm_analysis_port           -     @566 
+        get_peek_export      uvm_get_peek_imp            -     @548 
+        put_ap               uvm_analysis_port           -     @557 
+        put_export           uvm_put_imp                 -     @539 
+      fifo_spi               uvm_tlm_analysis_fifo #(T)  -     @584 
+        analysis_export      uvm_analysis_imp            -     @628 
+        get_ap               uvm_analysis_port           -     @619 
+        get_peek_export      uvm_get_peek_imp            -     @601 
+        put_ap               uvm_analysis_port           -     @610 
+        put_export           uvm_put_imp                 -     @592 
+    spi_agent_top_h          SPI_agent_top               -     @504 
+      spi_agent_h[0]         SPI_agent                   -     @824 
+        spi_drvh             spi_driver                  -     @972 
+          rsp_port           uvm_analysis_port           -     @989 
+          seq_item_port      uvm_seq_item_pull_port      -     @980 
+        spi_monh             spi_monitor                 -     @832 
+          spi_mon_port       uvm_analysis_port           -     @840 
+        spi_seqrh            spi_sequencer               -     @849 
+          rsp_export         uvm_analysis_export         -     @857 
+          seq_item_export    uvm_seq_item_pull_imp       -     @963 
+          arbitration_queue  array                       0     -    
+          lock_queue         array                       0     -    
+          num_last_reqs      integral                    32    'd1  
+          num_last_rsps      integral                    32    'd1  
+--------------------------------------------------------------------
+
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h0                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h3                                                            
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    30000                                                          
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1005
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 110000ps failed at 150000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h0                                                            
+  PWDATA                       integral  8     'hfe                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    110000                                                         
+  end_time                     time      64    110000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 170000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1082
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h0  
+  PWDATA   integral  8     'hfe 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 170000ps failed at 210000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h1                                                            
+  PWDATA                       integral  8     'h18                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    170000                                                         
+  end_time                     time      64    170000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 230000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1086
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h1  
+  PWDATA   integral  8     'h18 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 230000ps failed at 270000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h2                                                            
+  PWDATA                       integral  8     'h1                                                            
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    230000                                                         
+  end_time                     time      64    230000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 290000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1090
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h2  
+  PWDATA   integral  8     'h1  
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+property p1Penable went high
+property p2Psel stayed high
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 290000ps failed at 330000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is --------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                          
+--------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1029                                                          
+  PRESETn                      integral  1     'h1                                                            
+  PSEL                         integral  1     'h0                                                            
+  PENABLE                      integral  1     'h0                                                            
+  PWRITE                       integral  1     'h1                                                            
+  PADDR                        integral  3     'h5                                                            
+  PWDATA                       integral  8     'h64                                                           
+  PRDATA                       integral  8     'h0                                                            
+  PREADY                       integral  1     'h0                                                            
+  PSLVERR                      integral  1     'h0                                                            
+  begin_time                   time      64    290000                                                         
+  end_time                     time      64    290000                                                         
+  depth                        int       32    'd2                                                            
+  parent sequence (name)       string    4     seqh                                                           
+  parent sequence (full name)  string    63    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh     
+--------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 350000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h64 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+property p3Pready went high
+property p4Pready and Penable went low together
+"../rtl/APB_interface.sv", 51: top.apb_intrf.prp3: started at 350000ps failed at 390000ps
+	Offending 'PREADY'
+property p3Pready did not go high within two cycles
+UVM_INFO ../spi_agent/spi_driver.sv(54) @ 410000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Miso_value is 01101101
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 450000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 490000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h0  
+  miso                   integral  8     'h0  
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 530000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 570000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h40 
+  miso                   integral  8     'h40 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 610000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 650000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h60 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 690000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 730000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h60 
+  miso                   integral  8     'h60 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 770000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 810000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h60 
+  miso                   integral  8     'h68 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 850000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 890000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h64 
+  miso                   integral  8     'h6c 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 930000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 0
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 970000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h64 
+  miso                   integral  8     'h6c 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+UVM_INFO ../spi_agent/spi_driver.sv(125) @ 1010000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_drvh [spi_driver] The Driven Miso_value is 1
+UVM_INFO ../spi_agent/spi_monitor.sv(81) @ 1050000: uvm_test_top.envh.spi_agent_top_h.spi_agent_h[0].spi_monh [spi_monitor] The sampled Txn is ----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'hX  
+  mosi                   integral  8     'h64 
+  miso                   integral  8     'h6d 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1094
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h1  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h64 
+  PRDATA   integral  8     'h0  
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+"----------------------------------------------
+Name                     Type      Size  Value
+----------------------------------------------
+s_txn                    spi_txn   -     @1107
+  SS                     integral  1     'h0  
+  mosi                   integral  8     'h64 
+  miso                   integral  8     'h6d 
+  spi_interrupt_request  integral  1     'hX  
+----------------------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(95) @ 1050000: uvm_test_top.envh.sb[0] [scoreboard] Transmission Succesfull
+property p1Penable went high
+property p2Psel stayed high
+UVM_INFO ../apb_agent/apb_driver.sv(58) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_drvh [apb_driver] The Transaction driven is -------------------------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                                               
+-------------------------------------------------------------------------------------------------------------------
+req                            apb_txn   -     @1112                                                               
+  PRESETn                      integral  1     'h1                                                                 
+  PSEL                         integral  1     'h0                                                                 
+  PENABLE                      integral  1     'h0                                                                 
+  PWRITE                       integral  1     'h0                                                                 
+  PADDR                        integral  3     'h5                                                                 
+  PWDATA                       integral  8     'hf8                                                                
+  PRDATA                       integral  8     'h6d                                                                
+  PREADY                       integral  1     'h0                                                                 
+  PSLVERR                      integral  1     'h0                                                                 
+  begin_time                   time      64    1050000                                                             
+  depth                        int       32    'd2                                                                 
+  parent sequence (name)       string    9     read_seqh                                                           
+  parent sequence (full name)  string    68    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh.read_seqh
+  sequencer                    string    58    uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_seqrh          
+-------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO ../apb_agent/apb_monitor.sv(59) @ 1110000: uvm_test_top.envh.apb_agent_top_h.apb_agent_h[0].apb_monh [apb_monitor] The Sampled Txn from Monitor: --------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h6d 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+
+"--------------------------------
+Name       Type      Size  Value
+--------------------------------
+txn        apb_txn   -     @1103
+  PRESETn  integral  1     'h1  
+  PSEL     integral  1     'h1  
+  PENABLE  integral  1     'h1  
+  PWRITE   integral  1     'h0  
+  PADDR    integral  3     'h5  
+  PWDATA   integral  8     'h0  
+  PRDATA   integral  8     'h6d 
+  PREADY   integral  1     'h1  
+  PSLVERR  integral  1     'h1  
+--------------------------------
+"
+UVM_INFO ../tb/scoreboard.sv(106) @ 1110000: uvm_test_top.envh.sb[0] [scoreboard] Reception Succesfull
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 1110000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   35
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[apb_driver]     6
+[apb_monitor]     6
+[scoreboard]     2
+[spi_driver]    10
+[spi_monitor]     8
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time              1110000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1110000 ps
+CPU Time:      0.430 seconds;       Data structure size:   0.6Mb
+Wed Mar 25 17:29:58 2026
